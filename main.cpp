@@ -6,6 +6,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+
 #include "shader_s.h"
 
 #include <iostream>
@@ -18,6 +19,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
 float mixValue = 0.2f;
+
 int main()
 {
     glfwInit();
@@ -238,6 +240,7 @@ int main()
 
             glDrawArrays(GL_TRIANGLES, 0, 36);
         }
+
         glfwSwapBuffers(window);    // Swap color buffer to that's used to render and show it as output
         glfwPollEvents();           // Check if any events are triggered (inputs)
     }
